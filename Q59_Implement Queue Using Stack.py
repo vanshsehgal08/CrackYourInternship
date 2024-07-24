@@ -1,3 +1,5 @@
+from collections import deque
+
 class MyQueue(object):
 
     def __init__(self):
