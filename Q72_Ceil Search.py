@@ -32,16 +32,3 @@ def ceilSearch(arr, low, high, x):
 			return mid
 		else:
 			return ceilSearch(arr, low, mid - 1, x)
-
-# Driver program to check above functions
-arr = [1, 2, 8, 10, 10, 12, 19]
-n = len(arr)
-x = 20
-index = ceilSearch(arr, 0, n-1, x);
-
-if index == -1:
-	print ("Ceiling of %d doesn't exist in array "% x)
-else:
-	print ("ceiling of %d is %d"%(x, arr[index]))
-
-# This code is contributed by Shreyanshi Arun
